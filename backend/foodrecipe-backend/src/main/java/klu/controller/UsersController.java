@@ -14,9 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 //import klu.modal.User;
 import klu.model.Users;
 import klu.model.UsersManager;
+
+@CrossOrigin(origins = "*") 
 @RestController
 @RequestMapping("/users")
-@CrossOrigin(origins = "*")
 public class UsersController {
 	@Autowired
 	UsersManager UM;
