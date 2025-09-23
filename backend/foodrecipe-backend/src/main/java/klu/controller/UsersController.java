@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import klu.model.Users;
 import klu.model.UsersManager;
 
-@CrossOrigin(origins = "*") 
+@CrossOrigin(origins = "http://localhost:3000") 
 @RestController
 @RequestMapping("/users")
 public class UsersController {

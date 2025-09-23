@@ -1,4 +1,6 @@
-const API_BASE_URL = "http://backend:8090";
+const API_BASE_URL = window.location.hostname === 'localhost'
+  ? 'http://localhost:8090'  // host machine
+  : 'http://backend:8090';   // Docker network
 
 class ApiService {
   async request(endpoint, options = {}) {
